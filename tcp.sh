@@ -11,7 +11,7 @@ export PATH
 #=================================================
 
 sh_ver="1.3.2.37"
-github="github.000060000.xyz"
+github="github.jiandiu.com"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[信息]${Font_color_suffix}"
@@ -28,8 +28,8 @@ installbbr(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "6" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-headers-c6.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EUCmObDQnMZEmKnhxS67sJkBG8kjbx0bjNF-XwTtzvgtAA?download=1
-				wget -N -O kernel-c6.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EeC72joP3HVNmrIbjlPg_coBs7kj29Md4f9psAjZOuqOdg?download=1
+				wget -N -O kernel-headers-c6.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-headers-c6.rpm
+				wget -N -O kernel-c6.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-c6.rpm
 			
 				yum install -y kernel-c6.rpm
 				yum install -y kernel-headers-c6.rpm
@@ -41,8 +41,8 @@ installbbr(){
 		
 		elif [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-headers-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/Ef9KvmYkbsZJjGYw6073m-EB2WIGQg9IhPI9hVR4V3Y0Gw?download=1
-				wget -N -O kernel-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EV0JLwNBMZtOt023wkul_CkBTzaSToHH8KIgguawAa-WFg?download=1
+				wget -N -O kernel-headers-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-c7.rpm
+				wget -N -O kernel-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-headers-c7.rpm
 
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -53,8 +53,8 @@ installbbr(){
 			fi	
 			
 		elif [[ ${version} = "8" ]]; then
-			wget -N -O kernel-c8.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ETadaTIeeQJCgxEXKlOFiCEBsBa-Y15QbDkv-HQGo2EHSQ?download=1
-			wget -N -O kernel-headers-c8.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EZEZyLBjDplMgSqDzyaqkvYBW06OOKDCcIQq27381fa5-A?download=1
+			wget -N -O kernel-c8.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-c8.rpm
+			wget -N -O kernel-headers-c8.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/kernel-headers-c8.rpm
 
 			yum install -y kernel-c8.rpm
 			yum install -y kernel-headers-c8.rpm
@@ -66,8 +66,8 @@ installbbr(){
 		if [[ "${release}" == "debian" ]]; then
 			if [[ ${version} = "8" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d8.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EeNpacEol0ZDk5S5ARJ1G7wBI6hF0q-C--Nonxq31lO1iw?download=1
-					wget -N -O linux-headers-d8.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EWmAacwLpdJPhs56m6KhxsEBnnZyqOPJggf-2XXHMfxCtw?download=1
+					wget -N -O linux-image-d8.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-d8.deb
+					wget -N -O linux-headers-d8.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-d8.deb
 				
 					dpkg -i linux-image-d8.deb
 					dpkg -i linux-headers-d8.deb
@@ -79,8 +79,8 @@ installbbr(){
 		
 			elif [[ ${version} = "9" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d9.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EWrsOGQzcqJOrLzeaqXBh0sBbs9Np7anhs5JULwFAliGBg?download=1
-					wget -N -O linux-headers-d9.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EbAGliMxbpZAtaqvjhcaexkB3owfi2PddFenWUEwMNkiXw?download=1
+					wget -N -O linux-image-d9.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-d9.deb
+					wget -N -O linux-headers-d9.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-d9.deb
 				
 					dpkg -i linux-image-d9.deb
 					dpkg -i linux-headers-d9.deb
@@ -91,8 +91,8 @@ installbbr(){
 				fi
 			elif [[ ${version} = "10" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ET2PkFkQeSFMtpiIhK58xaoB01aH51XFPcMTv-OGCP92gA?download=1
-					wget -N -O linux-headers-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/Ec-uNmSW0iBOmUKbu-w2iS0BspktPBqgRjPMIqXcConmmA?download=1
+					wget -N -O linux-image-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-d10.deb
+					wget -N -O linux-headers-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-d10.deb
 				
 					dpkg -i linux-image-d10.deb
 					dpkg -i linux-headers-d10.deb
@@ -105,8 +105,8 @@ installbbr(){
 		elif [[ "${release}" == "ubuntu" ]]; then
 			if [[ ${version} = "16" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u16.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ERyDAcgbNptBjPGywtyy4zwB1S14VXAHEraobteVekwcNQ?download=1
-					wget -N -O linux-headers-u16.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/Eeka3lp7WAFOugowSi1F_eYBUXXdnx1dp1rI_aTg9XYtww?download=1
+					wget -N -O linux-image-u16.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-u16.deb
+					wget -N -O linux-headers-u16.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-u16.deb
 				
 					dpkg -i linux-image-u16.deb
 					dpkg -i linux-headers-u16.deb
@@ -118,8 +118,8 @@ installbbr(){
 		
 			elif [[ ${version} = "18" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u18.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ERvqNJiLLrpKnLO9z3vCdZIB-GwZr2AKXO7t6dpTbEotmQ?download=1
-					wget -N -O linux-headers-u18.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EWZdQsfxE5lAvL3xTHxS9H4BjYijqpxP-TokL1hLag7PIw?download=1
+					wget -N -O linux-image-u18.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-u18.deb
+					wget -N -O linux-headers-u18.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-u18.deb
 				
 					dpkg -i linux-image-u18.deb
 					dpkg -i linux-headers-u18.deb
@@ -130,8 +130,8 @@ installbbr(){
 				fi
 			elif [[ ${version} = "19" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u19.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ESEgC1nVDmRFmQeJnSWujz4BYy-tnZa64EgX60dIQJjW9Q?download=1
-					wget -N -O linux-headers-u19.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EcsC0aEv8KBHhG3jwRaF8r4BLqvFwBLK5JGy83dfhdV-zQ?download=1
+					wget -N -O linux-image-u19.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-u19.deb
+					wget -N -O linux-headers-u19.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-u19.deb
 				
 					dpkg -i linux-image-u19.deb
 					dpkg -i linux-headers-u19.deb
@@ -142,8 +142,8 @@ installbbr(){
 				fi
 			elif [[ ${version} = "20" ]]; then
 				if [[ ${bit} = "x86_64" ]]; then
-					wget -N -O linux-image-u20.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EYqsZWWiss1JvRW5gsfGxckBQhV1IiQgOqzlFmzUJAAdpg?download=1
-					wget -N -O linux-headers-u20.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ESJMvds9OwRKlSPEoHYeMPcB4CIbP9rO3hcdGmzAsJqCVQ?download=1
+					wget -N -O linux-image-u20.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-image-u20.deb
+					wget -N -O linux-headers-u20.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbr/linux-headers-u20.deb
 				
 					dpkg -i linux-image-u20.deb
 					dpkg -i linux-headers-u20.deb
@@ -192,8 +192,8 @@ installbbrplus(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-headers-c7.rpm https://github.com/cx9208/Linux-NetSpeed/raw/master/bbrplus/centos/7/kernel-headers-4.14.129-bbrplus.rpm
-				wget -N -O kernel-c7.rpm https://github.com/cx9208/Linux-NetSpeed/raw/master/bbrplus/centos/7/kernel-4.14.129-bbrplus.rpm
+				wget -N -O kernel-headers-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/BBRplus/kernel-headers-c7.rpm
+				wget -N -O kernel-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/BBRplus/kernel-c7.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -205,8 +205,8 @@ installbbrplus(){
 		fi	
 		
 	elif [[ "${release}" == "debian" || "${release}" == "ubuntu" ]]; then
-		wget -N -O linux-headers.deb https://github.com/cx9208/Linux-NetSpeed/raw/master/bbrplus/debian-ubuntu/x64/linux-headers-4.14.129-bbrplus.deb
-		wget -N -O linux-image.deb https://github.com/cx9208/Linux-NetSpeed/raw/master/bbrplus/debian-ubuntu/x64/linux-image-4.14.129-bbrplus.deb
+		wget -N -O linux-headers.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/BBRplus/linux-headers.deb
+		wget -N -O linux-image.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/BBRplus/linux-image.deb
 		
 		dpkg -i linux-image.deb
 		dpkg -i linux-headers.deb
@@ -268,8 +268,8 @@ installxanmod(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ERAo-0e2nVxIkiS-3ESibQkBtqPutKafMhuPJcPPjxezNg?download=1
-				wget -N -O kernel-headers-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EcFRGLkSHl5DtelqaAaSpE0BoA4Ypg0paEjjpolaORQKMw?download=1
+				wget -N -O kernel-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/xanmod/kernel-c7.rpm
+				wget -N -O kernel-headers-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/xanmod/kernel-headers-c7.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -279,8 +279,8 @@ installxanmod(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-5.5.1_xanmod1-1-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-headers-5.5.1_xanmod1-1-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-5.5.1_xanmod1-1-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.5.1xanmod/kernel-headers-5.5.1_xanmod1-1-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -290,8 +290,8 @@ installxanmod(){
 		
 	elif [[ "${release}" == "debian" || "${release}" == "ubuntu" ]]; then
 		if [[ ${bit} = "x86_64" ]]; then
-			wget -N -O linux-headers-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/Ebi4DrPpYchIuPBcw8iJ0FwBFRHCL4UeTdHEFtIOYwN36g?download=1
-			wget -N -O linux-image-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EUinaAfrdBVCisX1TMtnsX4BAmZII3FQss_dW0VEtG5fbg?download=1
+			wget -N -O linux-headers-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/xanmod/linux-headers-d10.deb
+			wget -N -O linux-image-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/xanmod/linux-image-d10.deb
 				
 			dpkg -i linux-image-d10.deb
 			dpkg -i linux-headers-d10.deb
@@ -326,8 +326,8 @@ installbbr2(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-c7.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
-				wget -N -O kernel-headers-c7.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
+				wget -N -O kernel-c7.rpm http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
+				wget -N -O kernel-headers-c7.rpm http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c7.x86_64.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -337,8 +337,8 @@ installbbr2(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/kernel-headers-5.4.0_rc6-1-bbr2-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -349,8 +349,8 @@ installbbr2(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "9" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
-				wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
+				wget -N -O linux-image-d9.deb http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
+				wget -N -O linux-headers-d9.deb http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d9_amd64.deb
 				
 				dpkg -i linux-image-d9.deb
 				dpkg -i linux-headers-d9.deb
@@ -361,8 +361,8 @@ installbbr2(){
 			fi	
 		elif [[ ${version} = "10" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d10.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
-				wget -N -O linux-image-d10.deb https://github.com/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
+				wget -N -O linux-headers-d10.deb http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-headers-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
+				wget -N -O linux-image-d10.deb http://${github}/ylx2016/kernel/releases/download/5.4.0r6bbr2/linux-image-5.4.0-rc6_5.4.0-rc6-1-bbr2-d10_amd64.deb
 					
 				dpkg -i linux-image-d10.deb
 				dpkg -i linux-headers-d10.deb
@@ -398,8 +398,8 @@ installzen(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EfQb4N8c2bxDlF3mj3SBVHIBGFSg_d1uR4LFzzT0Ii5FWA?download=1
-				wget -N -O kernel-headers-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EfKgMa8vsZBOt0zwXM_lHcUBOYlyH1CyRHrYSRJ5r6a0EQ?download=1
+				wget -N -O kernel-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/Zen/kernel-c7.rpm
+				wget -N -O kernel-headers-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/Zen/kernel-headers-c7.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -409,8 +409,8 @@ installzen(){
 				echo -e "${Error} 还在用32位内核，别再见了 !" && exit 1
 			fi
 		elif [[ ${version} = "8" ]]; then
-				wget -N -O kernel-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.2zen/kernel-5.5.2_zen-1-c8.x86_64.rpm
-				wget -N -O kernel-headers-c8.rpm https://github.com/ylx2016/kernel/releases/download/5.5.2zen/kernel-headers-5.5.2_zen-1-c8.x86_64.rpm
+				wget -N -O kernel-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.5.2zen/kernel-5.5.2_zen-1-c8.x86_64.rpm
+				wget -N -O kernel-headers-c8.rpm http://${github}/ylx2016/kernel/releases/download/5.5.2zen/kernel-headers-5.5.2_zen-1-c8.x86_64.rpm
 				
 				yum install -y kernel-c8.rpm
 				yum install -y kernel-headers-c8.rpm
@@ -421,8 +421,8 @@ installzen(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "9" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.2zen/linux-headers-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
-				wget -N -O linux-image-d9.deb https://github.com/ylx2016/kernel/releases/download/5.5.2zen/linux-image-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
+				wget -N -O linux-headers-d9.deb http://${github}/ylx2016/kernel/releases/download/5.5.2zen/linux-headers-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
+				wget -N -O linux-image-d9.deb http://${github}/ylx2016/kernel/releases/download/5.5.2zen/linux-image-5.5.2-zen_5.5.2-zen-1-d9_amd64.deb
 				
 				dpkg -i linux-image-d9.deb 
 				dpkg -i linux-headers-d9.deb
@@ -433,8 +433,8 @@ installzen(){
 			fi	
 		elif [[ ${version} = "10" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EShzFq8Jlv1PthbYlNNvLjIB2-hktrkPXxwd9mqcXgmcyg?download=1
-				wget -N -O linux-image-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/ERXzOc-2BzJInOxBgKo62OkBgcI9-O-fw0M8U2B4NazuLg?download=1
+				wget -N -O linux-headers-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/Zen/linux-headers-d10.deb
+				wget -N -O linux-image-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/Zen/linux-image-d10.deb
 					
 				dpkg -i linux-image-d10.deb
 				dpkg -i linux-headers-d10.deb
@@ -470,8 +470,8 @@ installbbrplusnew(){
 	if [[ "${release}" == "centos" ]]; then
 		if [[ ${version} = "7" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O kernel-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EWtxHt1RiAlHgqERl5bvYzcBUrkKa_n1mWQ-uM2-Na7gmQ?download=1
-				wget -N -O kernel-headers-c7.rpm https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EYkNoi17pKJBi7KnhUGRqEIBEK_26-bzkCL-fuQYZmrHWA?download=1
+				wget -N -O kernel-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbrplus-New/kernel-c7.rpm
+				wget -N -O kernel-headers-c7.rpm https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbrplus-New/kernel-headers-c7.rpm
 				
 				yum install -y kernel-c7.rpm
 				yum install -y kernel-headers-c7.rpm
@@ -484,8 +484,8 @@ installbbrplusnew(){
 	elif [[ "${release}" == "debian" ]]; then
 		if [[ ${version} = "10" ]]; then
 			if [[ ${bit} = "x86_64" ]]; then
-				wget -N -O linux-headers-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/Ef9pJn1wp-pBk4FIPxT1qBoBqpWhTVCawoKzEB0_vpiMRw?download=1
-				wget -N -O linux-image-d10.deb https://chinagz2018-my.sharepoint.com/:u:/g/personal/ylx_chinagz2018_onmicrosoft_com/EaFJshr8za9Bq9FGjEBLds0B4ZfrYThLH8E35xe9-qWX_Q?download=1
+				wget -N -O linux-headers-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbrplus-New/linux-headers-d10.deb
+				wget -N -O linux-image-d10.deb https://down.jiandiu.com/directlink/1/LinuxShell/tcp/bbrplus-New/linux-image-d10.deb
 					
 				dpkg -i linux-image-d10.deb
 				dpkg -i linux-headers-d10.deb
@@ -550,7 +550,7 @@ startlotserver(){
 		apt-get install ethtool
 	fi
 	#bash <(wget -qO- https://git.io/lotServerInstall.sh) install
-	bash <(wget --no-check-certificate -qO- https://github.com/xidcn/LotServer_Vicer/raw/master/Install.sh) install
+	bash <(wget --no-check-certificate -qO- http://${github}/xidcn/LotServer_Vicer/raw/master/Install.sh) install
 	sed -i '/advinacc/d' /appex/etc/config
 	sed -i '/maxmode/d' /appex/etc/config
 	echo -e "advinacc=\"1\"
@@ -732,7 +732,7 @@ gototcpx(){
 #切换到秋水逸冰BBR安装脚本
 gototeddysun_bbr(){
 	clear
-	wget https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+	wget http://${github}/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 }
 
 #开始菜单
